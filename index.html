@@ -1,73 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" media="screen">
-    <title>Cadastro</title>
+    <title>Cadastro Dev's</title>
 </head>
 
 <body>
-    <br>
-    
-           
-    <div class="container">
-        <div class="cabeçalho">
-            <h1 id="titulo" class="title"><b>Cadastro de Dev's</b></h1>
-        </div>
-
-        <form>
+    <div class="box">
+        <form action="">
             <fieldset>
-                <div class="caixa">
-                    <div class="alinhar">
-                        <label for="nome"><strong>Nome:</strong></label>
-                    </div>
-                    <input type="text" name="nome" id="nome" required>
+                <legend><a href="https://github.com/gustavoxrib/formulario.git"><b>Cadastro de Dev's (GitHub)</b></a></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelinput">Nome completo</label>
                 </div>
-                <div class="caixa">
-                    <div class="alinhar">
-                        <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                    </div>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
+                <br><br>
+                <div class="inputbox">
+                    <input type="teext" name="email" id="email" class="inputuser" required>
+                    <label for="nome" class="labelinput">E-mail</label>
                 </div>
-                <div class="caixa">
-                    <div class="alinhar">   
-                        <label for="email"><strong>E-mail:</strong></label>
-                    </div>
-                    <input type="email" name="email" id="email" required>
+                <br><br>
+                <div class="option2">
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <label for="cidade" class="labelinput">Cidade</label>
                 </div>
-            </fieldset>
-
-            <div>
-                <!--Comentário teste 1-->
-            </div>
-
-            <div class="campo">
-                <div>
-                    <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <label for="estado" class="labelinput">Estado</label>
                 </div>
-                <div>
-                    <label>
-                        <input type="radio" name="devweb" value="frontend"checked>Front-end
-                    </label>
                 </div>
-                <div>
-                    <label>
-                        <input type="radio" name="devweb" value="backend">Back-end
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="devweb" value="fullstack">Fullstack
-                    </label>
-                </div>        
-            </div>
-
-            <div class="caixa">
-                <div class="alinhar">
-                    <label for="senioridade"><strong>Senioridade:</strong></label>
-                </div>
+                <br>
+                <label><b>De qual lado da aplicação você desenvolve?</b></label><br><br>
+                <input type="radio" id="front-end" name="aplicacao" value="front-end" required>
+                <label for="front-end">Front-end</label>
+                <input type="radio" id="back-end" name="aplicacao" value="back-end" required>
+                <label for="back-end">Back-end</label>
+                <input type="radio" id="fullstack" name="aplicacao" value="fullstack" required>
+                <label for="fullstack">Fullstack</label>
+                <br>
                 <div class="senioridade">
+                    <label class="senior"><b>Senioridade:</b></label>
                     <select>
                         <option>Selecione</option>
                         <option>Junior</option>
@@ -75,11 +53,13 @@
                         <option>Senior</option>
                     </select>
                 </div>
-            </div>
 
-            <div>
-                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
-                <div class="option">                    
+                <br>
+                <div>
+                    <label><b>Selecione as tecnologias que utiliza:</b></label>
+                </div>
+                <br>
+                <div class="option">
                     <div class="grade">
                         <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                         <label for="tecnologia1">HTML</label>
@@ -113,23 +93,19 @@
                         <label for="tecnologia8">Getz</label>
                     </div>
                 </div>
-            </div>    
-
-            <div id="experiencia">
+                <br>
                 <div>
-                    <label for="experiencia"><strong>Conte um pouco da sua experiência:</strong></label>
+                    <label for="experiencia"><b>Conte um pouco da sua experiência:</b></label>
                 </div>
-                <div class="texto">
+                <div>
                     <textarea rows="4" id="experiencia" name="experiencia"></textarea>
-                </div>                    
-            </div>
-
-            <div class="botao">
-                <button type="reset" id="limpar">Limpar</button>
-                <button type="submit" id="concluido">Concluído</button>
-            </div>
-                                
-        </form>        
+                    <br>
+                    <div class="botao">
+                        <button type="reset" id="limpar">Limpar</button>
+                        <button type="submit" id="concluido">Concluído</button>
+                    </div>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
