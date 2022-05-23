@@ -1,14 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 15px;
     border-radius: 15px;
     width: 40%;
@@ -19,7 +27,8 @@ body {
 fieldset {
     border: 3px solid dodgerblue;
     border-radius: 15px;
-  
+    padding: 15px;
+
 }
 
 legend {
@@ -67,28 +76,28 @@ legend:hover {
     transition: .5s;
 }
 
-.inputuser:focus ~ .labelinput,
-.inputuser:valid ~ .labelinput {
+.inputuser:focus~.labelinput,
+.inputuser:valid~.labelinput {
     top: -20px;
     font-size: 12px;
-    color:rgb(239, 239, 239);
+    color: rgb(239, 239, 239);
     font-style: oblique;
 }
 
 .grade {
     justify-content: baseline;
-    column-gap: 80px; 
+    column-gap: 80px;
     row-gap: 5px;
- }
+}
 
 .option {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
 }
 
 .option2 {
-    display:grid;
+    display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: auto;
     column-gap: 10px;
@@ -97,9 +106,9 @@ legend:hover {
 
 .senioridade {
     margin-top: 20px;
-    display:grid;
+    display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: auto;    
+    grid-template-rows: auto;
 }
 
 .senior {
@@ -119,13 +128,13 @@ select {
     justify-content: center;
 }
 
-.botao {    
+.botao {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     justify-content: center;
     padding-top: 15px;
-    gap: 120px;       
+    gap: 120px;
 }
 
 #concluido {
@@ -135,14 +144,14 @@ select {
     border: 0;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 #concluido:hover {
     background-color: #2793ffe1;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 
 }
@@ -154,14 +163,14 @@ select {
     border: 0;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 #limpar:hover {
     background-color: #ff5050;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
@@ -179,8 +188,120 @@ textarea:focus {
     background-color: #dadafd;
 }
 
+@media screen and (max-width: 1000px) {
+    .box {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
 
 
 
+    fieldset {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    body {
+        margin: 0 0 0 0;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        margin: 0 0 0 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 13px;
+
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 340px) {
 
 
+
+    body {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0 0 0 0;
+    }
+
+    fieldset {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    form {
+        width: 100%;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
