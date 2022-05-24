@@ -1,26 +1,29 @@
 * {
     padding: 0;
     margin: 0;
+    margin-top: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    background-color: #0e62bcd6;
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
     align-items: center;
     justify-content: center;
-
 }
 
 .box {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 15px;
     border-radius: 15px;
-    width: 40%;
+    width: 100%;
     color: white;
+    height: auto;
 
 }
 
@@ -28,6 +31,7 @@ fieldset {
     border: 3px solid dodgerblue;
     border-radius: 15px;
     padding: 15px;
+    width: 100%;
 
 }
 
@@ -107,7 +111,7 @@ legend:hover {
 .senioridade {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
 }
 
@@ -117,14 +121,14 @@ legend:hover {
 }
 
 select {
-    width: 60%;
-    height: 27px;
+    width: 70%;
+    height: 20px;
     font-family: sans-serif;
     font-size: 1em;
     color: #000000;
     border-radius: 8px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10px;
     justify-content: center;
 }
 
@@ -134,7 +138,7 @@ select {
     grid-template-rows: auto;
     justify-content: center;
     padding-top: 15px;
-    gap: 120px;
+    gap: 80px;
 }
 
 #concluido {
@@ -189,31 +193,72 @@ textarea:focus {
 }
 
 @media screen and (max-width: 1000px) {
-    .box {
-        width: 70%;
 
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .box {
-        width: 80%;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .box {
-        width: 90%;
-        padding: 20px;
+    body {
+        padding-left: 25%;
+        padding-right: 25%;
     }
 
-
-
-    fieldset {
+    .box {
         width: 100%;
-        justify-content: center;
-        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .box {
+        width: 100%;
+        font-size: 13px;
     }
 
     legend {
@@ -224,13 +269,13 @@ textarea:focus {
 @media screen and (max-width: 430px) {
 
     body {
-        margin: 0 0 0 0;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .box {
         width: 100%;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 13px;
     }
 
     legend {
@@ -238,70 +283,89 @@ textarea:focus {
     }
 }
 
-@media screen and (max-width: 380px) {
-    body {
-        padding: 0;
-        width: 100%;
-        display: flex;
-        margin: 0 0 0 0;
-    }
+@media screen and (max-width: 360px) {
 
-    form {
-        width: 100%;
+    body {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
     }
 
     fieldset {
+        border: 3px solid dodgerblue;
+        border-radius: 15px;
+        padding: 8px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        margin: none;
     }
+
+    select {
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        justify-content: center;
+    }
+
 
     .box {
         width: 100%;
-        padding: 10px 10px 10px 10px;
-        background-color: rgba(0, 0, 0, 0.3);
         font-size: 13px;
-
     }
 
     legend {
         font-size: 16px;
+        padding: 3px;
+    }
+
+    .botao {
+        gap: 20px;
     }
 }
 
-@media screen and (max-width: 340px) {
-
-
+@media screen and (max-width: 280px) {
 
     body {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
         width: 100%;
-        height: auto;
-        display: flex;
-        margin: 0 0 0 0;
-    }
-
-    fieldset {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .box {
         width: 100%;
-        height: auto;
-        padding: 10px 10px 10px 10px;
         font-size: 13px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    form {
-        width: 100%;
     }
 
     legend {
         font-size: 16px;
+    }
+
+    .senioridade {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    select {
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        justify-content: center;
+    }
+
+    .botao {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 50px) {
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .botao {
+        gap: 5px;
     }
 }
